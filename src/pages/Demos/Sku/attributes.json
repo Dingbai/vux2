@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Place of production",
+    "values": [
+      "China",
+      "Korea",
+      "Indonesia",
+      "Japan",
+      "America"
+    ]
+  },
+  {
+    "name": "Size",
+    "values": [
+      "Large",
+      "43.5",
+      "43",
+      "42",
+      "41"
+    ]
+  },
+  {
+    "name": "Color",
+    "values": [
+      "White",
+      "Gray",
+      "Blue",
+      "Red",
+      "Yellow"
+    ]
+  }
+]

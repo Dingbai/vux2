@@ -1,0 +1,5 @@
+build/*.js
+config/*.js
+src/assets/utils/*.js
+src/polyfill/index.js
+src/pages/Demo_tcy/*.vue

@@ -1,0 +1,173 @@
+[
+  {
+    "datas": [
+      {
+        "name": "Color",
+        "value": "White"
+      },
+      {
+        "name": "Size",
+        "value": "41"
+      },
+      {
+        "name": "Place of production",
+        "value": "America"
+      }
+    ],
+    "price": 0.01,
+    "count": 21,
+    "skuid": 1
+  },
+  {
+    "datas": [
+      {
+        "name": "Color",
+        "value": "Blue"
+      },
+      {
+        "name": "Size",
+        "value": "42"
+      },
+      {
+        "name": "Place of production",
+        "value": "America"
+      }
+    ],
+    "price": 0.01,
+    "count": 11,
+    "skuid": 2
+  },
+  {
+    "datas": [
+      {
+        "name": "Color",
+        "value": "Blue"
+      },
+      {
+        "name": "Size",
+        "value": "43"
+      },
+      {
+        "name": "Place of production",
+        "value": "Japan"
+      }
+    ],
+    "price": 900,
+    "count": 10,
+    "skuid": 3
+  },
+  {
+    "datas": [
+      {
+        "name": "Color",
+        "value": "Red"
+      },
+      {
+        "name": "Size",
+        "value": "43.5"
+      },
+      {
+        "name": "Place of production",
+        "value": "Japan"
+      }
+    ],
+    "price": 1230,
+    "count": 4,
+    "skuid": 4
+  },
+  {
+    "datas": [
+      {
+        "name": "Color",
+        "value": "Red"
+      },
+      {
+        "name": "Size",
+        "value": "42"
+      },
+      {
+        "name": "Place of production",
+        "value": "America"
+      }
+    ],
+    "price": 321,
+    "count": 9,
+    "skuid": 5
+  },
+  {
+    "datas": [
+      {
+        "name": "Color",
+        "value": "Red"
+      },
+      {
+        "name": "Size",
+        "value": "43.5"
+      },
+      {
+        "name": "Place of production",
+        "value": "America"
+      }
+    ],
+    "price": 654,
+    "count": 20007,
+    "skuid": 6
+  },
+  {
+    "datas": [
+      {
+        "name": "Color",
+        "value": "Yellow"
+      },
+      {
+        "name": "Size",
+        "value": "43"
+      },
+      {
+        "name": "Place of production",
+        "value": "Indonesia"
+      }
+    ],
+    "price": 1000,
+    "count": 22,
+    "skuid": 7
+  },
+  {
+    "datas": [
+      {
+        "name": "Color",
+        "value": "Yellow"
+      },
+      {
+        "name": "Size",
+        "value": "43.5"
+      },
+      {
+        "name": "Place of production",
+        "value": "Indonesia"
+      }
+    ],
+    "price": 0.01,
+    "count": 10000,
+    "skuid": 8
+  },
+  {
+    "datas": [
+      {
+        "name": "Color",
+        "value": "White"
+      },
+      {
+        "name": "Size",
+        "value": "43.5"
+      },
+      {
+        "name": "Place of production",
+        "value": "America"
+      }
+    ],
+    "price": 0.01,
+    "count": 0,
+    "skuid": 9
+  }
+]

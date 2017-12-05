@@ -9,15 +9,12 @@ export default class Demo {
     //   .catch(function (err) {
     //     console.log(err)
     //   })
-    api.getdouban(this.vm.bookindex, {
+    api.getdouban(this.vm.index, {
       successHanding: (res) => {
-        this.vm.$vux.toast.show({ text: res })
+        this.vm.$vux.alert.show({ content: res })
       }
     })
   }
-  // init () {
-  //   api.
-  // }
   showloading () {
     this.vm.$vux.toast.show({ text: '正在加载' })
     this.vm.$vux.loading.show('正字加载')
@@ -49,9 +46,4 @@ export default class Demo {
       }
     )
   }
-  // allApi () {
-  //   api.testAll(
-  //     {}
-  //   )
-  // }
 }

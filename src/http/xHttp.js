@@ -107,11 +107,14 @@ function requestUrl (url) {
   // 测试/生成环境
   if (process.env.NODE_ENV !== 'development') {
     if (url.startsWith('/sameOriginApi')) {
+      console.log('sameorigin')
       // 同域名下还原请求地址
       url = url.replace('/sameOriginApi', '')
     } else if (!url.startsWith('http')) {
+      console.log('httpsameorigin')
       // 测试环境
       if (process.env.NODE_ENV === 'testing') {
+        console.log('testing')
         if (url.startsWith('/appApi')) {
           // 测试环境，访问test接口
           url = url.replace('v2', 'test')
@@ -120,6 +123,9 @@ function requestUrl (url) {
       // 线上地址加上项目名区分
       // url = config.build.assetsPublicPath + url.substring(1)
       url = '/proxy/' + url.substring(1)
+    } else if (url.startsWith('/douBan')) {
+      console.log('url')
+      return url
     }
   } else {
     if (url.startsWith('/appApi')) {
@@ -221,5 +227,16 @@ export default {
    */
   post (url, body, {options = null, type = 0, load = true, loadMsg = '加载中...', loadID = null, validator = DEF_VALIDATOR, completeHanding = () => {}, successHanding = () => {}, failHandling = DEF_FAIL_HANDLING, exceptionHandling = DEF_EXCEPTION_HANDLING, buried = true, delay = DEF_DELAY} = {}) {
     return send(url, 'post', body, options, load, loadMsg, loadID, validator, completeHanding, successHanding, failHandling, exceptionHandling, type, buried, delay)
+  },
+  /**
+   * tcy的测试接口
+   * @param url
+   * @param successHanding 成功回调
+   */
+  myget (url, { successHanding = () => {} }) {
+    return axios.get(url).then(function (res) {
+      // const obj = JSON.parse(res)
+      successHanding(res)
+    })
   }
 }

@@ -14,6 +14,6 @@ export default {
     ]).then(op.completeHanding).catch(op.exceptionHandling)
   },
   getdouban (bookindex, op = {}) {
-    Vue.$api.xHttp.get(`/douban/v2/book/${bookindex}`, op)
+    Vue.$api.xHttp.myget(`/douBan/v2/book/${bookindex}`, op)
   }
 }

@@ -32,6 +32,7 @@ export const router = new Router({
     { path: '/flexible', component: view('Demos/Flexible/Index/Index'), meta: { noTopSpace: true, noFoot: true } },
     { path: '/sku', component: view('Demos/Sku/Index') },
     { path: '/tcy', component: view('Demo_tcy/thuesday') },
-    { path: '/testcom', component: view('Demo_tcy/test_componets') }
+    { path: '/testcom', component: view('Demo_tcy/test_componets') },
+    { path: '/testget', component: view('Demos/Tcy/Tcy') }
   ]
 })

@@ -29,7 +29,9 @@
       Group, Cell, XButton
     },
     data () {
-      return {}
+      return {
+        bookindex: 1220562
+      }
     },
     created () {
       // 初始化

@@ -190,7 +190,16 @@ export default {
    * @param buried 是否添加接口埋点
    * @param delay 接口延迟时间，默认300
    */
-  get (url, {options = null, type = 0, load = true, loadMsg = '加载中...', loadID = null, validator = DEF_VALIDATOR, completeHanding = () => {}, successHanding = () => {}, failHandling = DEF_FAIL_HANDLING, exceptionHandling = DEF_EXCEPTION_HANDLING, buried = true, delay = DEF_DELAY} = {}) {
+  get (url, {options = null,
+    type = 0,
+    load = true,
+    loadMsg = '加载中...',
+    loadID = null,
+    validator = DEF_VALIDATOR,
+    completeHanding = () => {},
+    successHanding = () => {},
+    failHandling = DEF_FAIL_HANDLING, exceptionHandling = DEF_EXCEPTION_HANDLING, buried = true,
+    delay = DEF_DELAY} = {}) {
     return send(url, 'get', null, options, load, loadMsg, loadID, validator, completeHanding, successHanding, failHandling, exceptionHandling, type, buried, delay)
   },
   /**

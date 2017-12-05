@@ -50,6 +50,13 @@ module.exports = {
           '^/sameOriginApi': ''
         }
       },
+      '/douBan': {
+        target: 'https://api.douban.com/',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/douBan': ''
+        }
+      }
     },
     openUrlQuery: '' // 调试时，启动页面参数，例如 '/index?cryptPhone=ILUV/Y34vi7INGusxX/jMA=='
   }

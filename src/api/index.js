@@ -12,5 +12,8 @@ export default {
       Vue.$api.xHttp.get(`/appApi/v2/gps/GetAddress?longtitude=${longtitude}&lantitude=${lantitude}`, op),
       Vue.$api.xHttp.get(`/appApi/v2/newloan/LoanCredit?udcid=${udcid}`, op)
     ]).then(op.completeHanding).catch(op.exceptionHandling)
+  },
+  getdouban (bookindex, op = {}) {
+    Vue.$api.xHttp.get(`/douban/v2/book/${bookindex}`, op)
   }
 }

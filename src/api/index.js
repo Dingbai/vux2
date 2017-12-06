@@ -15,5 +15,16 @@ export default {
   },
   getdouban (bookindex, op = {}) {
     Vue.$api.xHttp.myget(`/douBan/v2/book/${bookindex}`, op)
+  },
+  QueryMyOrders (op = {}) {
+    Vue.$api.xHttp.post(
+      `/pocApi/order/api/Query/QueryMyOrders`,
+      {
+        OrderChannel: 0,
+        PageIndex: 1,
+        PageSize: 10
+      },
+      op
+    )
   }
 }

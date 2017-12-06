@@ -33,6 +33,8 @@ export const router = new Router({
     { path: '/sku', component: view('Demos/Sku/Index') },
     { path: '/tcy', component: view('Demo_tcy/thuesday') },
     { path: '/testcom', component: view('Demo_tcy/test_componets') },
-    { path: '/testget', component: view('Demos/Tcy/Tcy') }
+    { path: '/testget', component: view('Demos/Tcy/Tcy') },
+    // --------------------------------------------------------------------------------------
+    { path: '/myhome', component: view('home/index') }
   ]
 })

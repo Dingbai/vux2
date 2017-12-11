@@ -2,7 +2,7 @@ import Vue from 'vue'
 import axios from 'axios'
 // import config from '../../config'
 // 通用接口业务成功判定条件
-const DEF_VALIDATOR = (res) => res.State === 'success'
+const DEF_VALIDATOR = (res) => res.ErrorCode === '000000'
 // 通用接口业务失败处理
 const DEF_FAIL_HANDLING = (res) => Vue.$vux.alert.show({content: res.Msg})
 // 通用接口异常处理

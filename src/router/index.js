@@ -35,6 +35,6 @@ export const router = new Router({
     { path: '/testcom', component: view('Demo_tcy/test_componets') },
     { path: '/testget', component: view('Demos/Tcy/Tcy') },
     // --------------------------------------------------------------------------------------
-    { path: '/myhome', component: view('home/index') }
+    { path: '/myhome', component: view('home/index'), meta: { noTopSpace: true, noFoot: true } }
   ]
 })

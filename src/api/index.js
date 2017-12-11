@@ -26,5 +26,14 @@ export default {
       },
       op
     )
+  },
+  oAuthByApp (body, op = {}) {
+    Vue.$api.xHttp.post(`/pocApi/poc/api/Account/OAuthByApp`, body, op)
+  },
+  sendcode (body, op = {}) {
+    Vue.$api.xHttp.post(`/pocApi/poc/api/Account/SendLoginCode`, body, op)
+  },
+  login (body, op = {}) {
+    Vue.$api.xHttp.post(`/pocApi/poc/api/Account/Login`, body, op)
   }
 }

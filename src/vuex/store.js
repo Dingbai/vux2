@@ -9,6 +9,7 @@ import sp from './modules/sp'
 import log from './modules/log'
 import service from './modules/service'
 import localStorage from '../assets/utils/localStorage'
+import auth from './modules/auth'
 // 用于使用script标签加载window.Vuex，Vuex会被自动安装，无需手动安装
 Vue.use(Vuex)
 export default new Vuex.Store({
@@ -17,7 +18,8 @@ export default new Vuex.Store({
     global,
     sp,
     log,
-    service
+    service,
+    auth
   },
   // 插件
   plugins: [createPersistedState({

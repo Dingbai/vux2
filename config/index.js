@@ -7,7 +7,7 @@ module.exports = {
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/vux2/',  // 项目发布的二级目录
+    assetsPublicPath: '/pzvip/',  // 项目发布的二级目录
     productionSourceMap: false, // 打包时是否生成SourceMap
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
@@ -48,6 +48,35 @@ module.exports = {
         changeOrigin: true,
         pathRewrite: {
           '^/sameOriginApi': ''
+        }
+      },
+      '/pocApi': {
+        target: 'http://api.51pinzhi.cn',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/pocApi': ''
+        }
+      },
+      '/pocTestApi': {
+        target: 'http://test.api.51pinzhi.cn',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/pocTestApi': ''
+        }
+      },
+      '/double11Api': {
+        target: 'https://poc.51pinzhi.cn/proxy',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/double11Api': ''
+        }
+      },
+      '/test_double11Api': {
+        target: 'http://test.poc.51pinzhi.cn/proxy',
+        // target: 'http://localhost:3300/proxy',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/test_double11Api': ''
         }
       },
       '/douBan': {

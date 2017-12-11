@@ -25,6 +25,10 @@ const mutations = {
     state.udcid = obj.udcid
     state.usermob = obj.usermob
     state.userkey = obj.userkey
+    state.channel = obj.channel
+    state.openid = obj.openid
+    state.osn = obj.osn
+    state.pathName = obj.pathName
   },
   init_service_data (state, obj) {
     state.info = { ...state.info, ...obj }
